@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:rgb(46, 42, 59);
+}
+button:focus {
+    outline: none;
+  
+}
+.start {
+    width: 250px;
+    height: 50px;
+    color: rgb(73, 11, 11);
+    background: rgb(95, 255, 2);
+    font-weight:bold;
+    border: 4px solid rgb(38, 184, 9);
+    position: absolute;
+    border-radius: 7px;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:inset 0px 0px 20px 0px rgb(74, 143, 17);
+    user-select: none;
+    cursor: pointer;
+    transition: 3ms;
+}
+
+.start:hover {
+    background: rgb(125, 202, 10);
+ }
+.display {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    border: 5px solid rgba(98, 6, 141, 0.884);
+    width: 780px;
+    height: 190px;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    /* box-shadow: 0px 0px 40px 0px rgb(43, 3, 43); */
+    box-shadow: inset 0px 0px 40px 0px rgb(27, 2, 48);
+    z-index: 2;
+
+}
+
+.random {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    border: 5px solid rgb(138, 33, 138);
+    width: 780px;
+    height: 190px;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background: rgb(17, 71, 187);
+    overflow: hidden;
+}
+
+.cards {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 2000px;
+    height: 100%;
+    transition: 5s;
+}
+.cards > div { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 170px;
+    height: 170px;
+    background: rgb(251, 255, 0);
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(122, 7, 7);
+}
+.result {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border: 20px solid transparent;
+    border-top: 40px solid rgb(255, 166, 0);
+    filter: drop-shadow(1px 1px 1px rgba(141, 11, 11, 0.5));
+}
+
